@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, ArrowUpRight } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Download } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -52,7 +52,35 @@ export default function Hero() {
             React, Next.js, TypeScript and modern backend technologies.
           </p>
 
-          <div className="mt-10 flex flex-wrap gap-4">
+<div className="mt-10 flex flex-wrap gap-4">
+  <a
+    href="#projects"
+    className="group inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-semibold text-black transition hover:bg-green-400"
+  >
+    View My Work
+    <ArrowUpRight
+      size={18}
+      className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
+    />
+  </a>
+
+  <a
+    href="/cv.pdf"
+    download="Amedu-Believe-Abraham-CV.pdf"
+    className="inline-flex items-center gap-2 rounded-full border border-green-400/30 bg-green-400/10 px-6 py-3 font-semibold text-green-400 transition hover:bg-green-400 hover:text-black"
+  >
+      <Download size={18} />
+    Download CV
+  </a>
+
+  <a
+    href="#contact"
+    className="rounded-full border border-white/15 px-6 py-3 font-semibold text-white transition hover:border-green-400/40 hover:bg-white/5"
+  >
+    Contact Me
+  </a>
+</div>
+          {/* <div className="mt-10 flex flex-wrap gap-4">
             <a
               href="#projects"
               className="group inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-semibold text-black transition hover:bg-green-400"
@@ -70,7 +98,7 @@ export default function Hero() {
             >
               Contact Me
             </a>
-          </div>
+          </div> */}
 
           {/* <div className="mt-8 flex items-center gap-4">
             <a
